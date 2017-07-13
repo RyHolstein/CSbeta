@@ -4,7 +4,7 @@ var Person = mongoose.model("Person");
 
 module.exports = {
   index : (req, res)=> {
-    res.render('index');
+    res.render('index', {complete: false});
   },
 
 
@@ -14,7 +14,7 @@ module.exports = {
       if (err) {
         res.redirect('/');
       } else {
-        res.redirect('/');
+        res.render('index',{complete: true} );
       }
     })
   },

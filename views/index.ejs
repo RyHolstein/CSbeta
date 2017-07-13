@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=0.7, maximum-scale=0.7">
-
+    <meta property="og:image" content="assets/0.jpg"/ >
     <link rel="stylesheet" href="/css/styles.css">
     <script src="js/script.js"></script>
-
     <title>YJ</title>
 
     <style>
@@ -17,29 +16,44 @@
     }
     </style>
   </head>
-
   <body>
+    <% if(complete) {%>
+
+    <script>
+        (function (){
+          alert("Thank you for the RSVP");
+        }) ();
+    </script>
+    <% } %>
+    <p><%= complete %></p>
     <div class="fixed-container">
-      <img id="bl" class="fixed" src="assets/4.png">
-      <img id="br" class="fixed" src="assets/5.png">
-      <div id="tl" class="fixed">DINNER AT YAMA Q</div>
-      <div id="tr" class="fixed">SATURDAY, JULY 15, 9:30PM</div>
+      <!-- <img id="bl" class="fixed" src="assets/4.png">
+      <img id="br" class="fixed" src="assets/5.png"> -->
+      <!-- <div id="tl" class="fixed">DINNER AT YAMA Q</div>
+      <div id="tr" class="fixed">SATURDAY, JULY 15, 9:30PM</div> -->
     </div>
 
     <div id="main-holder">
-      <img id="one" class="main" src="assets/1.png">
-      <form id="contact" action="/rsvp" method="post">
-          <h3>RVSP</h3>
+      <img class="main" src="assets/6.png">
+      <img class="main" src="assets/1.png">
+      <img class="main" src="assets/7.png">
+      <img class="main" src="assets/8.png">
+      <img class="main" src="assets/3.png">
+      <form id="contact" action="/" method="post">
+          <!-- <h3>RVSP</h3> -->
           <fieldset>
-            <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
+            <input placeholder="Your name"  type="text" name ="name" tabindex="1" required autofocus>
           </fieldset>
           <fieldset>
-            <button onclick="myFunction()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="Email" type="email" name ="email" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Attending</button>
           </fieldset>
         </form>
     </div>
     <script>
-    function myFunction() {
+    function thankYou() {
       alert("Thank you for the RSVP");
     }
     </script>

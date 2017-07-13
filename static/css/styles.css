@@ -41,23 +41,23 @@ img{
 
 #main-holder{
   position:absolute;
-  width:400px;
-  height:500px;
+  width:40vh;
+  height:80vh;
 
   left:50%;
-  top:50%;
+  top:10vh;
 
-  margin-left:-200px;
-  margin-top:-250px;
+  margin-left:-20vh;
 
-
-  background-color:black;
+  /*background-color:red;*/
 }
 
 .main{
   width:100%;
-  /*margin-bottom:25px;*/
+  margin-bottom:1vh;
+  margin-top:1vh;
 }
+
 
 /* form */
 
@@ -81,20 +81,21 @@ img{
 #contact {
 	/*background:#F9F9F9;*/
 	/*padding:25px;*/
-	margin:25px 0;
+	/*margin:25px 0;*/
 }
 
 #contact h3 {
 	color: #F96;
 	display: block;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 400;
-  margin-bottom:15px;
+  margin-bottom:1vh;
+  margin-top:1.5vh;
 }
 
 fieldset {
 	border: medium none !important;
-	margin: 0 0 10px;
+	/*margin: 0 0 10px;*/
 	min-width: 100%;
 	padding: 0;
 	width: 100%;
@@ -127,7 +128,7 @@ fieldset {
 	border:none;
 	background:#0CF;
 	color:#FFF;
-	margin:0 0 5px;
+	margin:0 0 3vh;
 	padding:10px;
 	font-size:15px;
 }
@@ -158,7 +159,7 @@ fieldset {
  color:#888;
 }
 
-.top-text{
+/*.top-text{
   margin-top:15px;
   font-size:44px;
   text-align:center;
@@ -168,8 +169,4 @@ fieldset {
   margin-top:15px;
   font-size:31px;
   text-align:center;
-}
-.thank-you {
-  margin-top: 50px;
-  text-align: center;
-}
+}*/

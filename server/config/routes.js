@@ -9,7 +9,7 @@ module.exports = function(app){
   app.get('/ThankYou', Controller.thankYou);
   app.get('/list', Controller.getallPersons);
 //post routes
-  app.post('/rsvp', Controller.add);
+  app.post('/', Controller.add);
 
 
 

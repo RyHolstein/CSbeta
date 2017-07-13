@@ -19,12 +19,15 @@
     h1 {
       font-size: 4em;
     }
+    span {
+      color: #09C;
+    }
     </style>
   </head>
   <body>
     <h1>list</h1>
     <% for( var i = 0; i < person.length; i++) {%>
-      <h2><%= person[i].name %></h2>
+      <h2> <span>Name:</span> <%= person[i].name %> <span>Email: </span><%= person[i].email %></h2>
     <% } %>
   </body>
 </html>
