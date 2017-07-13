@@ -18,14 +18,12 @@
   </head>
   <body>
     <% if(complete) {%>
-
     <script>
         (function (){
           alert("Thank you for the RSVP");
         }) ();
     </script>
     <% } %>
-    <p><%= complete %></p>
     <div class="fixed-container">
       <!-- <img id="bl" class="fixed" src="assets/4.png">
       <img id="br" class="fixed" src="assets/5.png"> -->
@@ -37,10 +35,8 @@
       <img class="main" src="assets/6.png">
       <img class="main" src="assets/1.png">
       <img class="main" src="assets/7.png">
-      <img class="main" src="assets/8.png">
-      <img class="main" src="assets/3.png">
       <form id="contact" action="/" method="post">
-          <!-- <h3>RVSP</h3> -->
+          <h3>RVSP</h3>
           <fieldset>
             <input placeholder="Your name"  type="text" name ="name" tabindex="1" required autofocus>
           </fieldset>
@@ -51,11 +47,8 @@
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Attending</button>
           </fieldset>
         </form>
+        <img class="main" src="assets/8.png">
+        <img class="main" src="assets/3.png">
     </div>
-    <script>
-    function thankYou() {
-      alert("Thank you for the RSVP");
-    }
-    </script>
   </body>
 </html>
