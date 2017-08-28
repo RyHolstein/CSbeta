@@ -1,12 +1,11 @@
 var mongoose = require('mongoose');
-var Controller = require('./../controllers/controller');
+// var Controller = require('./../controllers/controller');
 var Person = mongoose.model("Person");
 
 module.exports = {
   index : (req, res)=> {
-    res.render('index', {complete: false});
+    res.render('index');
   },
-
 
   add : (req, res)=>{
     var person = new Person(req.body);
@@ -14,13 +13,9 @@ module.exports = {
       if (err) {
         res.redirect('/');
       } else {
-        res.render('index',{complete: true} );
+        res.render('index');
       }
     })
-  },
-
-  thankYou : (req, res) => {
-    res.render('thankYou');
   },
 
   getallPersons : (req, res) => {

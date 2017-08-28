@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="493px" viewBox="0 0 249 493" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.10542736e-14,438.113803 L7.10542736e-14,40.1222843 C7.10542736e-14,16.5515993 12.274382,8.52651283e-14 40.9075047,8.52651283e-14 C69.6301125,8.69366051e-14 182.930572,8.81796552e-14 194.719722,8.52651283e-14 C213.481779,8.23506013e-14 235.081793,8.02151165 235.081793,40.1222843 L235.081793,438.113803 C235.081793,451.463705 231.22168,478.236087 193.901572,478.236087 L40.9075047,478.236087 C4.02203864,478.236087 7.10542736e-14,451.612368 7.10542736e-14,438.113803 Z" id="path-1"></path>
+        <filter x="-6.6%" y="-2.2%" width="113.2%" height="106.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.0823529412   0 0 0 0 0.250980392  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.0823529412   0 0 0 0 0.254901961  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-5.7%" y="-1.8%" width="111.5%" height="105.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.678431373   0 0 0 0 0.729411765   0 0 0 0 0.8  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="16" y="59" width="203.128928" height="360.376957" rx="3.25"></rect>
+        <pattern id="pattern-5" patternUnits="objectBoundingBox" x="-20.2259462%" width="120.225946%" height="100%">
+            <use xlink:href="#image-6" transform="scale(15.0157065,15.0157065)"></use>
+        </pattern>
+        <image id="image-6" width="19" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAwCAYAAAB9sggoAAAABGdBTUEAA1teXP8meAAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAG1JREFUWAnt0qERwCAUBUFC/zUiY1NCmKGDdYhDn/izvGe93z8ufPPCm85JHaY/k1hiKqB9G0tMBbRvY4mpgPZtLDEV0L6NJaYC2rexxFRA+zaWmApo38YSUwHt21hiKqB9G0tMBbRvY4mpgPYbfR4EEvFDZeEAAAAASUVORK5CYII="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="phone" transform="translate(7.000000, 3.000000)">
+            <g id="Phone-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Screen-Border" fill="#FFFFFF" x="14" y="58" width="207.693623" height="362.643478" rx="1.95"></rect>
+            <mask id="mask-7" fill="white">
+                <use xlink:href="#path-4"></use>
+            </mask>
+            <use id="Screen" fill="url(#pattern-5)" xlink:href="#path-4"></use>
+        </g>
+    </g>
+</svg>

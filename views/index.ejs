@@ -2,53 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=0.7, maximum-scale=0.7">
-    <meta property="og:image" content="assets/0.jpg"/ >
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="js/script.js"></script>
-    <title>YJ</title>
-
-    <style>
-    @font-face {
-      font-family: questrial-regular;
-      src: url(css/questrial-regular.woff);
-      font-weight: 500;
-    }
+    <title>CreateSafe Beta</title>
     </style>
   </head>
   <body>
-    <% if(complete) {%>
-    <script>
-        (function (){
-          alert("Thank you for the RSVP");
-        }) ();
-    </script>
-    <% } %>
-    <div class="fixed-container">
-      <!-- <img id="bl" class="fixed" src="assets/4.png">
-      <img id="br" class="fixed" src="assets/5.png"> -->
-      <!-- <div id="tl" class="fixed">DINNER AT YAMA Q</div>
-      <div id="tr" class="fixed">SATURDAY, JULY 15, 9:30PM</div> -->
+    <div class="nav">
+      <img id="nav-logo" src="assets/logo.svg">
+      <ul class="nav-links">
+        <button id="nav-button" class="common-Button">Request Access</button>
+        <li><a href="mailto:info@createsafe.net">Contact</a></li>
+        <li><a href="https://medium.com/theknowing">The Knowing</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </div>
+    <div id="content-wrapper">
 
-    <div id="main-holder">
-      <img class="main" src="assets/6.png">
-      <img class="main" src="assets/1.png">
-      <img class="main" src="assets/7.png">
-      <form id="contact" action="/" method="post">
-          <h3>RVSP</h3>
-          <fieldset>
-            <input placeholder="Your name"  type="text" name ="name" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Email" type="email" name ="email" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Attending</button>
-          </fieldset>
+      <div class="info-text">
+        <h1>CreateSafe</h1>
+        <h3>Create <span>leverage</span> from value.</h3>
+        <p>Consumption of music is growing at a rapid pace, yet the fragmented groups of industry rights holders lack a proven ability to quantify the value of their copyrights or make actionable decisions about their business.</p>
+      </div>
+
+
+
+
+
+      <div class="app-icon">
+        <img id="logo" src="assets/logo.svg">
+      </div>
+      <form id="contact" action="#" method="post">
+
+          <h3 class="form-title">CreateSafe Beta</h3>
+            <input id ="email-input" placeholder="Email" type="email" name ="email" tabindex="1" required autofocus>
+
+            <button class="common-Button" name="submit" type="submit" data-submit="...Sending">Get Started</button>
         </form>
-        <img class="main" src="assets/8.png">
-        <img class="main" src="assets/3.png">
+
+        <div class="phone-container">
+          <img class="phone-body-img" src="assets/phone_body.svg" >
+          <img class="phone-screen-img" src="assets/phone_screen.svg">
+        </div>
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end -->

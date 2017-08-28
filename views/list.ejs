@@ -7,27 +7,11 @@
 
     <title>List</title>
 
-    <style>
-    @font-face {
-      font-family: questrial-regular;
-      src: url(css/questrial-regular.woff);
-      font-weight: 500;
-    }
-    * {
-      text-align: center;
-    }
-    h1 {
-      font-size: 4em;
-    }
-    span {
-      color: #09C;
-    }
-    </style>
   </head>
   <body>
     <h1>list</h1>
     <% for( var i = 0; i < person.length; i++) {%>
-      <h2> <span>Name:</span> <%= person[i].name %> <span>Email: </span><%= person[i].email %></h2>
+      <h2> Email:<%= person[i].email %></h2>
     <% } %>
   </body>
 </html>
