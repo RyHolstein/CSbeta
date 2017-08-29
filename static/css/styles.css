@@ -42,7 +42,7 @@ green: #3ECF8E*/
 
 /*********/
 /*links*/
-ul {
+.nav ul {
   list-style-type: none;
   margin: 0;
   padding: 10px;
@@ -53,12 +53,12 @@ ul {
   top: 30%;
 
 }
-li {
+.nav li {
   float: right;
   background: none;
 
 }
-li a {
+.nav li a {
   display: block;
   color: #6B7C93;
   text-align: center;
@@ -68,7 +68,7 @@ li a {
   font-weight: bold;
 }
 
-li:hover a {
+.nav li:hover a {
   opacity: 0.8;
 }
 
@@ -110,6 +110,60 @@ li:hover a {
   font-weight: lighter;
   /*letter-spacing: 1.5px;*/
 }
+.section {
+  outline: 1px solid red;
+  position: relative;
+  left: 200px;
+  width: 700px;
+  text-align: left;
+
+}
+.section h1 {
+  text-align: left;
+  color: #3ECF8E;
+
+}
+.section h2 {
+  text-align: left;
+  color: #3ECF8E;
+}
+h4 {
+  text-align: left;
+  color: #5533FF;
+}
+
+.section h1 {
+  text-align: left;
+}
+.section p {
+  color: #6B7C93;
+  font-size: .85em;
+  line-height: 175%;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.info-icon h2 {
+  text-align: center;
+  color: #5533FF;
+
+}
+
+.o-list {
+  text-align: left;
+  color: #6B7C93;
+  border: 1px solid blue;
+  margin: 0px;
+  padding: 0px;
+}
+.olist ul li {
+  text-align: left;
+  font-size: .85em;
+  line-height: 175%;
+  font-weight: lighter;
+}
+
+
 
 
 
@@ -184,11 +238,10 @@ li:hover a {
   font-size: 16px;
 
 }
-textarea:focus, input:focus{
+
+input:focus{
     outline: none;
     /*border: 1px solid grey;*/
-
-
 }
 
 /*Phone img ======================== */
