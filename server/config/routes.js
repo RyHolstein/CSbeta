@@ -8,7 +8,7 @@ module.exports = function(app){
   app.get('/', Controller.index);
   app.get('/list', Controller.getallPersons);
 //post routes
-  app.post('/add_user', Controller.add);
+  app.post('/add_email', Controller.add);
 
 
 

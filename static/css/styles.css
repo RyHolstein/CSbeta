@@ -7,8 +7,14 @@ green: #3ECF8E*/
 
 
 @@font-face {
-  font-family: Corbel;
+  font-family: "Corbel";
   src: url('Corbel.ttf');
+}
+body{
+  overflow-x:hidden;
+  /*overflow: hidden;*/
+  width: 100%;
+  position: relative;
 }
 * {
   text-align: center;
@@ -18,29 +24,35 @@ green: #3ECF8E*/
 
 }
 #content-wrapper {
-  min-width: 1000px;
-  max-width: 1500px;
-  background: none;
+  /*position:fixed;*/
   padding: 0px;
 }
 /*navigation bar ===================================*/
 /*logo*/
+
+#main-wrapper{
+  /*background-color:pink;*/
+  /*outline: 1px solid red;*/
+  width:calc(100% - 80px);
+  margin-left:auto;margin-right:auto;
+  max-width:1000px;
+  padding-left:40px;padding-right:40px;
+}
 .nav {
   width: 100%;
-  min-width: 1000px;
-  max-width: 1500px;
   position: relative;
   display: block;
   height: 150px;
-  margin-bottom: 50px;
-
+  left:0;right:0;margin:auto;
+  top:0;
 }
 #nav-logo {
   float: left;
   position: absolute;
-  left: 150px;
+  left: 0;
   top: calc(50% - 75px/2);
   width: 75px;
+  cursor:pointer;
 }
 
 /*********/
@@ -52,23 +64,22 @@ green: #3ECF8E*/
   overflow: hidden;
   background: none;
   position: relative;
-  right: 100px;
   top: 30%;
 
 }
 .nav li {
   float: right;
-  background: none;
-
+  cursor:pointer;
 }
 .nav li a {
   display: block;
   color: #6B7C93;
   text-align: center;
-  padding: 14px 45px;
   text-decoration: none;
-  background: none;
   font-weight: bold;
+  height:40px;
+  line-height:40px;
+  padding-right:45px;
 }
 
 .nav li:hover a {
@@ -77,6 +88,8 @@ green: #3ECF8E*/
 
 #nav-button {
   float: right;
+  margin-right:-10px;
+  margin-left:0px;
 }
 
 
@@ -84,27 +97,22 @@ green: #3ECF8E*/
 .info-text{
   /*outline: 1px solid red;*/
   display: block;
-  margin-bottom: 50px;
-  margin-left: 150px;
-  text-align: left;
-  width: 500px;
-  z-index: 1;
+  margin-top:100px;
+  margin-bottom: 150px;
+  max-width: 500px;
+  width:100%;
 }
 .info-text h1 {
   text-align: left;
   color: #5533FF;
-  /*letter-spacing: 1.5px;*/
 }
-
 .info-text h3 {
   text-align: left;
   color: #6B7C93;
-  /*letter-spacing: 1.5px;*/
 }
 .info-text h3 span {
   text-align: left;
   color: #3ECF8E;
-  /*letter-spacing: 1.5px;*/
 }
 .info-text p {
   text-align: justify;
@@ -112,14 +120,21 @@ green: #3ECF8E*/
   font-size: .85em;
   line-height: 175%;
   font-weight: lighter;
-  /*letter-spacing: 1.5px;*/
 }
 .section {
   position: relative;
-  left: 200px;
-  width: 700px;
-  text-align: left;
-  background: none;
+  left: 0px;
+  width: 80%;
+  margin-left:auto;margin-right:auto;
+}
+
+#section1{
+  width:40%;
+  margin-left:10%;
+}
+
+#section2{
+    padding-bottom:50px;
 }
 
 .section h1 {
@@ -137,9 +152,9 @@ green: #3ECF8E*/
 h4 {
   display: inline-block;
   margin: 0px;
-  text-align: left;
+  text-align:left;
   color: #5533FF;
-
+  width:100%;
 }
 
 .section h1 {
@@ -166,14 +181,13 @@ h4 {
   color: #6B7C93;
   margin-bottom: 0px;
   padding: 0px;
-  width:400px;
+  width:100%;
 
 }
 #bottom-info { width: 100%;}
 
 ul {
-  /*outline: 1px solid red;*/
-  padding-left: 20px;
+  padding-left: 30px;
 }
 li {
   text-align: left;
@@ -183,9 +197,9 @@ li {
 }
 .twin {
   text-align: left;
-  width: 35%;
-  display: inline-block;
-  vertical-align: top;
+  width: 50%;
+  float:left;
+  /*background-color:red;*/
 }
 .right {float: right;}
 .top-divider {border-bottom: 1px solid #DFE6EE;margin-bottom: 20px;}
@@ -195,7 +209,9 @@ li {
   margin-bottom: 75px;
 }
 
-
+.no-divider {
+  margin-bottom: 75px;
+}
 
 
 
@@ -225,6 +241,7 @@ li {
 
 .form-title {
   color:  #5533FF;
+  font-size:36px;
 }
 
 /* send button ======================== */
@@ -250,7 +267,8 @@ li {
 
 .common-Button:hover {
   transform:translateY(-1px);
-  box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)
+  box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+  cursor:pointer;
 }
 
 
@@ -261,7 +279,7 @@ li {
   border-radius: 3px;
   background-color: white;
   border: 1.2px solid #D2D6DC;
-  width: 200px;
+  width: 250px;
   height: 35px;
   padding-left: 10px;
   font-size: 16px;
@@ -285,47 +303,65 @@ input:focus{
   position:relative;
   display: inline;
   width: 100%;
+  margin-bottom:35px;
 }
 
 .phone-screen-img {
-  /*position: absolute;
+  filter:invert();
+  z-index: 1;
   display: inline;
-  bottom: calc(50% - 354px/2);
-  left: 50%;*/
   position:absolute;
   left:0;
   right:0;
-  top:0;
+  top:-45px;
   bottom:0;
   margin:auto;
-  /*border: 2px dotted red;*/
+  width: 90%;
+  height: 66%;
+
 }
 
 
+.phone-package {
+  position:relative;
 
+}
 
 
 
 
 /*design =================================*/
+
+
+#phone-container{
+  z-index:-1;
+  position:absolute;
+  width:100vw;
+  height:3000px;
+  /*background-color:orange;*/
+  overflow-x:hidden;
+}
+
 .streak {
   position: absolute;
   background-color: #F6F9FC;
   width: 4000px;
   height: 840px;
-  top: 215px;
-  left: -100px;
-  z-index: -1;
-  -ms-transform: rotate(-9deg);
-  -webkit-transform: rotate(-9deg);
-  transform: rotate(-9deg);
+  top: 290px;
+  left: -300px;
+  z-index: -2;
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 
 }
+
 .phonewall-left {
+  /*background-color:red;*/
   position: absolute;
-  z-index: 0px;
+  z-index: -1;
   right: 10px;
-  top: 325px;
+  top: 350px;
   width: 200px;
   height: 2000px;
   -ms-transform: rotate(-15deg); /* IE 9 */
@@ -335,9 +371,9 @@ input:focus{
 }
 .phonewall-right {
   position: absolute;
-  z-index: 0px;
+  z-index: -1;
   right: -210px;
-  top: 200px;
+  top: 150px;
   width: 200px;
   height: 2000px;
   -ms-transform: rotate(-15deg); /* IE 9 */
@@ -350,14 +386,18 @@ input:focus{
 
 /*The Footer ==================================*/
 .footer {
+  width:auto;
+  width:100%;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #F6F9FC;
+  /*background-color: #F6F9FC;*/
 }
 
 
 
-
+#stretchy{
+  line-height:64px;padding-bottom:200px
+}
 
 
 
