@@ -23,6 +23,7 @@ body{
   background: none;
 
 }
+button:focus {outline: none;}
 #content-wrapper {
   /*position:fixed;*/
   padding: 0px;
@@ -115,7 +116,7 @@ body{
   color: #3ECF8E;
 }
 .info-text p {
-  text-align: justify;
+  text-align: left;
   color:#6B7C93;
   font-size: .85em;
   line-height: 175%;
@@ -307,7 +308,7 @@ input:focus{
 }
 
 .phone-screen-img {
-  filter:invert();
+  /*filter:invert();*/
   z-index: 1;
   display: inline;
   position:absolute;
@@ -316,8 +317,8 @@ input:focus{
   top:-45px;
   bottom:0;
   margin:auto;
-  width: 90%;
-  height: 66%;
+  width: 85%;
+  /*height: 66%;*/
 
 }
 
@@ -397,6 +398,13 @@ input:focus{
 
 #stretchy{
   line-height:64px;padding-bottom:200px
+}
+
+#form-response {
+  display:none;
+  color: #6B7C93;
+  font-weight: bold;
+
 }
 
 

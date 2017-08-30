@@ -8,13 +8,28 @@ module.exports = {
   },
 
   add : (req, res)=>{
-    var person = new Person(req.body);
-    person.save((err, savedPerson)=>{
-      if (err) {
-        res.redirect('/');
-      } else {
-        res.redirect('/');
+    Person.findOne(req.body).exec((err, foundPerson)=> {
+      if(foundPerson) {
+        console.log("email already in database");
+        res.redirect('/')
+  
+      }else {
+        var person = new Person(req.body);
+        person.save((err, savedPerson)=>{
+          if (err) {
+            res.redirect('/');
+          } else {
+            console.log('added');
+            res.redirect('/');
+
+          }
+        })
+
       }
+
+
+
+
     })
   },
 

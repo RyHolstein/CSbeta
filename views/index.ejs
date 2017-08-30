@@ -2,10 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>CreateSafe Beta</title>
+    <link rel="icon" href="assets/logoicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    </style>
+    <script>
+      function ScrollToBottom(){
+        $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+      };
+    </script>
   </head>
   <body>
     <div id="content-wrapper">
@@ -15,23 +21,23 @@
 
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/1.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/2.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/3.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/4.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/5.jpg">
           </div>
 
 
@@ -39,11 +45,11 @@
         <div class="phonewall-right">
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/6.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
-            <img class= "phone-screen-img" src="assets/phone_screen.svg">
+            <img class= "phone-screen-img" src="assets/7.jpg">
           </div>
           <div class="phone-package">
             <img class="phone-body-img" src="assets/phone_body.svg">
@@ -53,13 +59,12 @@
       </div>
 
       <div id="main-wrapper">
-
           <div class="nav">
             <img id="nav-logo" src="assets/logo.svg">
             <ul class="nav-links">
-              <button id="nav-button" class="common-Button">Request Access</button>
-              <li><a href="mailto:info@createsafe.net">Contact</a></li>
-              <li><a href="https://medium.com/theknowing">The Knowing</a></li>
+              <button onclick="ScrollToBottom()" id="nav-button" class="common-Button">Request Access</button>
+              <li><a href="mailto:info@createsafe.net" target=“_blank”>Contact</a></li>
+              <li><a href="https://medium.com/theknowing" target=“_blank”>The Knowing</a></li>
               <!-- <li><a href="#">About</a></li> -->
             </ul>
           </div>
@@ -169,17 +174,38 @@
 
 
       <div class="footer">
+        <A NAME="footer">
         <div class="app-icon">
           <img id="logo" src="assets/logo.svg">
         </div>
-        <form id="contact" action="/add_email" method="post">
-          <h3 class="form-title">CreateSafe Beta</h3>
+        <h3 class="form-title">CreateSafe Beta</h3>
+        <form id="contact">
           <input id ="email-input" placeholder="Email" type="email" name ="email" tabindex="1" >
           <button class="common-Button" name="submit" type="submit" data-submit="...Sending">Get Started</button>
         </form>
+        <h2 id="form-response">Thank You</h2>
       </div>
 
     </div>
+
+
+    <script>
+      $('#contact').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+          url: '/add_email',
+          method: 'post',
+          data: $(this).serialize(),
+          success: function(serverResponse){
+            $('#contact').fadeOut('slow', function(){
+              $('#form-response').fadeIn('slow');
+            });
+          }
+        });
+      });
+
+    </script>
+
   </body>
 </html>
 
