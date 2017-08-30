@@ -404,6 +404,8 @@ input:focus{
   display:none;
   color: #6B7C93;
   font-weight: bold;
+  opacity: 0.5;
+  font-size: 1em;
 
 }
 
